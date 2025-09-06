@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הדמיית רקורסיה - סכום ספרות</title>
+‎    <!-- קישור חיצוני ל-Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+‎    <!-- קישור לקובץ העיצוב המקומי -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-8">
+        <header class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">הדמיית רקורסיה: סכום ספרות</h1>
+            <p class="mt-2 text-lg text-gray-600">הכנס מספר שלם וחיובי כדי לראות כיצד הרקורסיה עובדת שלב אחר שלב.</p>
+        </header>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <input type="number" id="numberInput" placeholder="הכנס מספר כאן" class="w-full sm:w-64 text-lg text-center p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+            <button id="visualizeBtn" class="w-full sm:w-auto bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-transform transform hover:scale-105">
+‎                הצג הדמיה
+            </button>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 min-h-[50px]">
+             <h2 class="text-2xl font-semibold mb-4 text-center">מחסנית הקריאות (Call Stack)</h2>
+             <div id="visualizationArea" class="space-y-3">
+‎                <!-- קריאות הרקורסיה יוצגו כאן -->
+             </div>
+        </div>
+        
+        <div id="resultArea" class="mt-6 text-center text-2xl font-bold text-indigo-700 h-8">
+‎            <!-- התוצאה הסופית תוצג כאן -->
+        </div>
+    </div>
+
+    <footer class="text-center text-gray-500 text-sm mt-8 py-4">
+        <p>&copy; 2025 כל הזכויות שמורות לאריאל קלפנר - מומחה לטכנופדגוגיה ושילוב בינה מלאכותית בחינוך.</p>
+    </footer>
+
+‎    <!-- קישור לקובץ הסקריפט המקומי -->
+    <script src="script.js"></script>
+</body>
+</html>
+
